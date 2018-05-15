@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Musicaid — The Musically Social App</title>
+<!--<link rel="icon" href="images/background.png">-->
+<!--<link rel="icon" href="http://2.bp.blogspot.com/-CBHV3xrqnTE/Udxl6wyrCuI/AAAAAAAAfsY/k9Js6Y1wSKg/s1600/P1090998.JPG">-->
+<link rel="icon" href="images/maid.png">
+<link rel="stylesheet" href="/css/style.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style> 
+body{
+margin: 25px;
+
+}
+#menu li{
+float: left;
+margin: 15px;
+}
+.submenu{
+display: none;
+position: absolute;
+margin: 0;
+padding: 0;
+background-color: lightcoral;
+min-width: 160px;
+
+}
+.submenu li{
+clear: both;
+
+}
+
+ul{
+list-style: none;
+}
+#menu:after{
+content: "";
+display: table;
+clear: both;
+}
+#title{
+font-weight: bold;
+font-family: 'Fredoka One', cursive;
+font-size: 50pt;
+}      
+
+body{
+/*background-image: url("https://discolai.files.wordpress.com/2018/02/hip-hop-wallpaper-in-best-resolutions-wpc5002205.jpg?w=1920&h=768&crop=1");*/
+background-size: cover;
+background-color: #660000;
+}
+
+/*collect {
+position: relative;
+width: 100%;
+max-width: 400px;
+float: left;
+
+margin: 10px;
+}*/
+
+.collect img {
+width: 350px;
+height: 350px;
+}
+
+.collect:hover  {
+opacity: 0.7;
+}
+
+.collect .btn {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color: maroon;
+color: white;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+}
+
+.container .btn:hover {
+background-color: black;
+}
+.custom{
+background-color:white;
+font-family:Arial;
+text-transform: uppercase;
+font-size: 15pt;
+/*border: none;*/
+}
+p{
+color: white;
+}
+.navbar-default .navbar-nav > li > a {
+color: maroon; /*Change active text color here*/
+}
+.navbar-default{
+padding: 20px;
+}
+#maid-logo{
+width: 35px;
+height: 35px;
+}
+h1{
+    font-family: castellar;
+    color:white;
+}
+h2{
+    font-family: Copperplate Gothic Light;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+<div class="container-fluid">
+<center>
+<!--
+<h1>Music Aid</h1>
+<h2>"The Future of Musically Social"</h2>
+-->
+<img src="images/maid.png" width="100px" height="100px">
+
+</center>
+<br>
+<br>
+
+<nav class="navbar navbar-default custom">
+
+<!--
+<div class="navbar-header">
+<a class="navbar-brand" href="#" style="color:black;">M.A.I.D</a>
+</div>
+-->
+
+<div class="navbar-header">
+<a class="navbar-brand" href="#" style="color:black;"><img id="maid-logo" src="images/maid.png" width="35px" height="35px"></a>
+</div>
+
+<ul class="nav navbar-nav ">
+<li class=""><a href="/">Home</a></li>
+<li><a class="menu-text" href="#">Collection</a></li>
+<li><a href="/search">Search</a></li>
+<li><a href="/faq">FAQ</a></li>
+</ul>
+
+</nav>
+
+<div class="row">
+
+<div  class="col-sm-4 collect" >
+<a href="/collection/artists">
+<img src="images/art.jpg" alt="art" style="width:100%">
+<button class="btn">Artist</button>
+</a>
+</div>
+
+<div class="col-sm-4 collect">
+<a href="/collection/albums">
+<img src="images/alb.jpg" alt="alb" style="width:100%">
+<button class="btn">Album</button>
+</a>
+</div>
+
+<div class=" col-sm-4 collect">
+<a href="/collection/tracks">
+<img src="images/tra.jpg" alt="tra" style="width:100%">
+<button class="btn">Tracks</button>
+</a>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

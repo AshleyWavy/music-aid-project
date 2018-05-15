@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Musicaid — The Musically Social App</title>
+<link rel="icon" href="images/background.png">
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/index.js"></script>
+<style>
+    
+#menu li{
+float: left;
+margin: 15px;
+}
+.submenu{
+display: none;
+position: absolute;
+margin: 0;
+padding: 0;
+background-color: lightcoral;
+min-width: 160px;
+
+}
+.submenu li{
+clear: both;
+
+}
+
+ul{
+list-style: none;
+}
+#menu:after{
+content: "";
+display: table;
+clear: both;
+}
+#title{
+font-weight: bold;
+font-family: 'Fredoka One', cursive;
+font-size: 50pt;
+}    
+    
+
+</style>
+<script>
+
+</script>
+</head>
+<body>
+      
+        <center>
+        <!--<h1 id="title">MUSICAID</h1>-->
+          <!--
+        <h1 id="title">SEARCH</h1>
+        <i><h3>"Future Of Musically Social"</h3></i>
+            -->
+        </center>
+    <div id="menu">
+    <ul>
+        <li><a href="#">Home</a></li> 
+        <li>
+        <a href="/collection">Collection</a>
+            <ul class="submenu">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            </ul>
+        </li>
+        <li><a href="/search">Search</a>
+            <ul class="submenu">
+            <li>A</li>
+            <li>B</li>
+            </ul>
+        </li>
+        <li><a href ="/faq">FAQ</a></li>
+    </ul>
+   </div>
+    <!--<h1>COLLECTION</h1>-->
+<!--
+<center>"the future of musically social"</center>
+<center>issa test user interface! by: ajm</center>
+-->
+<!--<a href="/collection" id="">view my collection</a>-->
+<!--<a href="/collection/albums" id="">view my albums</a>
+<a href="/collection/tracks" id="">view my tracks</a>-->
+
+
+<!--<h1>SEARCH</h1>-->
+<h3>Searching for..</h3>
+    
+    
+<a href="" id="albumSearch"> album</a>
+<!--<a href="" id="artistSearch">search artist</a>-->
+<a href="" id="trackSearch"> track</a>
+<a href="" id="artistSearch"> artist</a>
+<div id="formArea">
+<form method="POST" action="">
+
+<fieldset id="albumForm">
+<br/>
+<label>search for an album:</label> 
+<input type="text" id="typeAlbum">
+<button id = "submit">search</button>
+</fieldset>
+
+
+<fieldset id="artistForm">
+<br/>
+<label>search for an artist:</label> 
+<input type="text" id="typeArtist">
+<button id = "submitArtist">search</button>
+</fieldset>
+
+<fieldset id="trackForm">
+<br/>
+<label>search for an track:</label>
+<input type="text" id="typeTrack">
+<button id = "submitTrack">search</button>
+</fieldset>
+</form>
+</div>
+
+
+<div id="result">
+<h3>Results!</h3>
+<table id="resultArea">
+</table>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Musicaid — The Musically Social App</title>
+<link rel="icon" href="images/background.png">
+<!--<link rel="stylesheet" href="/css/style.css">-->
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<style>
+body{
+color:black;
+}
+#menu li{
+float: left;
+margin: 15px;
+}
+.submenu{
+display: none;
+position: absolute;
+margin: 0;
+padding: 0;
+background-color: lightcoral;
+min-width: 160px;
+
+}
+.submenu li{
+clear: both;
+
+}
+
+ul{
+list-style: none;
+}
+#menu:after{
+content: "";
+display: table;
+clear: both;
+}
+#title{
+font-weight: bold;
+font-family: 'Fredoka One', cursive;
+font-size: 50pt;
+}
+</style>
+<script>
+console.log("when my client query is sent to server blank it crashes");
+console.log("if i leave form blank for album search and click search it crashes");
+"use strict";
+$().ready(function(){
+var data;
+$.post("/collection/artists",data,function(result){
+
+console.log(result); //log results into console on client side
+
+for(var i=0; i<result.length; i++){
+var item = result[i];
+console.log(item);
+var output = '<li>' + '<img src="' + item.images[1].url + '">' + '</li>'; 
+output += '<li>' + item.name + '</li>';
+output += '<li>' + item.genre + '</li>' ;
+
+var ul = $('<ul class="col-sm-6"></ul>');
+    ul.html(output);
+    $(".container").append(ul);
+}
+
+});
+
+});
+</script>
+</head>
+<body>
+<center>
+<!--<h1 id="title">MUSICAID</h1>-->
+<!--
+<h1 id="title">COLLECTIONS</h1>
+<i><h3>"Future Of Musically Social"</h3></i>
+-->
+</center>
+<div id="menu">
+<ul>
+<li><a href="#">Home</a></li> 
+<li>
+<a href="/collection">Collection</a>
+<ul class="submenu">
+<li>A</li>
+<li>B</li>
+<li>C</li>
+</ul>
+</li>
+<li><a href="/search">Search</a>
+<ul class="submenu">
+<li>A</li>
+<li>B</li>
+</ul>
+</li>
+<li><a href ="/faq">FAQ</a></li>
+</ul>
+</div>
+<!--<h1>COLLECTION</h1>-->
+
+<!--<h2>TRACKS</h2>-->
+
+<div class="container">
+<!--
+<ul>
+<li>    </li>    
+</ul>
+-->
+</div>
+
+<a href="/search" id="again">phone home (go home roger!)</a>
+
+
+</body>
+</html>

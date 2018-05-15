@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Musicaid — The Musically Social App</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="icon" href="images/maid.png">
+<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<script src="https://code.jquery.com/jquery.js"></script>-->
+<script src="js/index.js"></script>
+<style>
+body{
+            /*background-color: darkseagreen;*/
+			background-color: #660000;
+            font-family: VCR,Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+            font-size: 21px;
+			
+    }
+	
+	        input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: white ;
+        color: #800000;
+        }
+        button{
+             background-color: #ffd700 ; /* Onyx */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+        }
+        fieldset{
+            border: none;
+			
+        }
+        
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        }
+
+        td, th {
+        border: 1px solid #ffffff;
+/*        text-align: left;*/
+        padding: 8px;
+        }
+
+        tr{
+/*        background-color: #dddddd;*/
+        }
+        #demo img{
+            width: 1100px;
+            height: 375px;
+        }
+		label{
+			color: white;
+		}
+		h1{
+			font-family: castellar;
+		}
+		h2{
+			font-family: Copperplate Gothic Light;
+			
+		}
+		
+#menu li{
+float: left;
+margin: 15px;
+}
+.submenu{
+display: none;
+position: absolute;
+margin: 0;
+padding: 0;
+background-color:;
+min-width: 160px;
+
+}
+.submenu li{
+clear: both;
+text-color: white;
+
+}
+
+ul{
+list-style: none;
+}
+#menu:after{
+content: "";
+display: table;
+clear: both;
+}
+#title{
+font-weight: bold;
+font-family: castellar;
+font-size: 50pt;
+}    
+    
+
+</style>
+<script>
+
+</script>
+</head>
+<body>
+<center>
+    <img src="images/maid.png" width:"100px" height:"100px">
+      <!--<h1 class="text-white">Music Aid</h1>-->
+      <h2 class="text-white">"The Future of Musically Social"</h2>
+	  
+	<br>
+		<br>
+</center>
+    <div id="menu">
+    <ul>
+        <li><a href="#" class="text-white">Home</a></li> 
+        <li>
+        <a href="/collection" class="text-white">Collection</a>
+            <ul class="submenu">
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            </ul>
+        </li>
+        <li><a href="/search" class="text-white">Search</a>
+            <ul class="submenu">
+            <li>A</li>
+            <li>B</li>
+            </ul>
+        </li>
+        <li><a href ="/faq" class="text-white">FAQ</a></li>
+    </ul>
+   </div>
+    <!--<h1>COLLECTION</h1>-->
+<!--
+<center>"the future of musically social"</center>
+<center>issa test user interface! by: ajm</center>
+-->
+<!--<a href="/collection" id="">view my collection</a>-->
+<!--<a href="/collection/albums" id="">view my albums</a>
+<a href="/collection/tracks" id="">view my tracks</a>-->
+
+
+<!--<h1>SEARCH</h1>
+<h3 class="text-white>Searching for..</h3>
+-->
+    
+<a href="" id="albumSearch" class="text-warning"> album</a>
+<!--<a href="" id="artistSearch">search artist</a>-->
+<a href="" id="trackSearch" class="text-warning"> track</a>
+<a href="" id="artistSearch" class="text-warning"> artist</a>
+<div id="formArea">
+<form method="POST" action="">
+
+<fieldset id="albumForm">
+<br/>
+<label>search for an album:</label> 
+<input type="text" id="typeAlbum">
+<button id = "submit">search</button>
+</fieldset>
+
+
+<fieldset id="artistForm">
+<br/>
+<label>search for an artist:</label> 
+<input type="text" id="typeArtist">
+<button id = "submitArtist">search</button>
+</fieldset>
+
+<fieldset id="trackForm">
+<br/>
+<label>search for an track:</label>
+<input type="text" id="typeTrack">
+<button id = "submitTrack">search</button>
+</fieldset>
+</form>
+</div>
+<br>
+		<br>
+		<br>
+		<br>
+
+<h2 class="text-white"><center>What's Trending</center></h2>
+<center>
+  <div  id="demo" class="carousel slide" data-ride="carousel" data-interval="8000" data-pause="hover">
+  <ul class="carousel-indicators " >
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3" ></li>
+
+  </ul>
+  <div class="carousel-inner">
+    
+	 <div class="carousel-item active">
+      <img src="images/ta.jpg" alt="ta" >
+      <div class="carousel-caption">
+        <h1 class="text-dark"><b>Top Artist's</b></h1>
+        <h1><p class="text-danger"><b>XXL Magazine</b></p></h1>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/drake.jpg" alt="ovo" >
+      <div class="carousel-caption">
+        <h1 class="text-dark"><b>Drake</b></h1>
+        <h1><p class="text-danger"><b>Whats New!</b></p></h1>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/kodak.jpg" alt="beef"   >
+      <div class="carousel-caption">
+        <h1 class="text-danger"><b>Kodak vs Lil Wayne</b></h1>
+       <h1> <p class="text-danger"><b>Hip Hop News!</b></p></h1>
+      </div>   
+    </div>
+	 <div class="carousel-item">
+      <iframe width="1100" height="375" src="https://www.youtube.com/embed/S-sJp1FfG7Q" frameborder="0" allow="autoplay; encrypted-media" ></iframe>
+      <div class="carousel-caption">
+        <h1 class="text-dark"></h1>
+        <h1><p class="text-danger"></p></h1>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </center>
+</div>
+
+<div id="result">
+<h3>Results!</h3>
+<table id="resultArea">
+</table>
+</div>
+
+
+</body>
+</html>
