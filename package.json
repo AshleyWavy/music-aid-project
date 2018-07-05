@@ -1,0 +1,35 @@
+{
+  "name": "music-aid-project",
+  "version": "1.0.0",
+  "description": "A Node.js app using Express",
+  "engines": {
+    "node": "8.0.0"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^5.0.14",
+    "node-spotify-api": "^1.0.7",
+    "spotify": "^0.3.0"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/musicaidproject"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
